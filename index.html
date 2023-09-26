@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Letter</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 1.5cm;
+        }
+        .logo{
+            text-align:center;
+        }
+        .header {
+            text-align: left;
+            margin-bottom: 1em;
+            line-height:0.2em;
+        }
+        .address {
+            margin-top: 2em;
+            line-height:0.2em;
+        }
+        .signature {
+            text-align:left;
+            margin-top: 4em;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+       <img src="https://user-images.githubusercontent.com/131793338/270541490-89870024-a9bc-40df-a2cb-02f88689ee20.jpg", alt="iare_logo" >
+    </div>
+
+    <div class="header">
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>From</p>
+        <h4>Dr. L V Narasimha Prasad, M.Tech, Ph.D.</h4>
+        <p>Principal</p>
+    </div>
+
+    <div class="address">
+       
+        <p>To</p>
+        <p>Dr. Sukanya K</p>
+        <p>Assistant Professor</p>
+        <p>Department of Electronics and Communication Engineering</p>
+        <p>TKR College of Engineering and Technology</p>
+        <p>Meerpet, Hyderabad - 500 097</p>
+        <p>Phone: 9951018558</p>
+        <p>Email: sukanya.addagantla@gmail.com</p>
+    </div>
+
+    <div class="content">
+        <h4>Dear Madam,</h4>
+        <p>Sub: Appointment as External Examiner for B.Tech VI Semester End Practical Examination- Regarding.</p>
+        <p>I am pleased to appoint you as External Examiner for B.Tech VI Semester End Practical Examination July 2023, as per following details:</p>
+        <ul>
+            <table style="width:100%">
+                <tr><td style="width:30%">Progrmme</td><td style="width:2%">:</td><td style="width:68%"><select name="cars" id="cars">
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="MBA">MBA</option>
+                    <option value="M.Tech">M.Tech</option>
+                    </select></td></tr>
+                <tr><td>Semester</td><td>:</td><td><select name="I" id="I">
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                    <option value="IV">IV</option>
+                    <option value="V">V</option>
+                    <option value="VI">VI</option>
+                    <option value="VII">VII</option>
+                    <option value="VIII">VIII</option>
+                    </select></td></tr>
+                <tr><td>Practical Course </td><td>:</td><td>Antennas and Microwave Engineering</td></tr>
+                <tr><td>Course Code</td><td>:</td><td>AECC41</td></tr>
+                <tr><td>Branch</td><td>:</td><td><select name="Branch" id="Branch">
+                    <option value="AE">AE</option>
+                    <option value="CSE">CSE</option>
+                    <option value="CSE(AI&ML)">CSE(AI&ML)</option>
+                    <option value="CSE(DS)">CSE(DS)</option>
+                    <option value="CSE(CS)">CSE(CS)</option>
+                    <option value="CSIT">CSIT</option>
+                    <option value="IT">IT</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="ME">ME</option>
+                    <option value="CE">CE</option>
+                    </select></td></tr>
+                <tr><td>Date(s) of Practical Exam</td><td>:</td><td><input type="date" id="date" name="date of exam"></td></tr>
+                <tr><td>Time of Practical Exam</td><td>:</td><td>09:30 AM – 04:30 PM</td></tr>
+            </table>
+        </ul>
+
+        <p>You are requested to confirm your availability for the examination on or before 26 July 2023. You are eligible of TA, DA and Honorarium as per the rules of our institute.</p>
+    </div>
+
+    <div class="signature">
+        <p><b>COE  &tab DEAN, PMCS  PRINCIPAL</b></p>
+    </div>
+
+    <div class="copy-to">
+        <p>Copy to:</p>
+        <ol>
+            <li>Individual</li>
+            <li>Controller of Examinations</li>
+            <li>Dean of Planning Monitoring & Continuing Studies</li>
+        </ol>
+    </div>
+
+    <script>
+        window.onload = function() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
