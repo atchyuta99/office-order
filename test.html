@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="form-container">
-        <h2>Details of the Lab External Exam</h2>
+        <h2>Details of the External Examiner</h2>
         <!-- Add form elements here -->
         <label for="Name">Name of the external faculty</label>
         <input type="text" id="Name" name="Name"><br><br>
@@ -36,14 +37,15 @@
         <input type="input" id="Email" name="Email"><br><br>
         <br><br>
         <br><br>
-
+<h2>Details of the Lab</h2>
         <label for="Programme">Programme</label>
         <select name="Programme" id="Programme">
             <option value="B.Tech">B.Tech</option>
             <option value="M.Tech">M.Tech</option>
             <option value="MBA">MBA</option>
         </select>
-
+<br>
+<br>
         <label for="Semester">Semester</label>
         <select name="Semester" id="Semester">
             <option value="I">I</option>
@@ -55,70 +57,74 @@
             <option value="VII">VII</option>
             <option value="VIII">VIII</option>
         </select>
-
-        <label for="Semester">Semester</label>
-        <select name="Semester" id="Semester">
-            <option value="I">I</option>
+        <br><br>               
             
+        <label for="Section">Section</label>
+        <select name="Section" id="Section">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="G">G</option>
+            <option value="H">H</option>
+        </select>
+        <br><br>
+
         </select>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        <tr><td>Semester</td><td>:</td><td><select name="I" id="I">
-            <option value="I">I</option>
-            <option value="II">II</option>
-            <option value="III">III</option>
-            <option value="IV">IV</option>
-            <option value="V">V</option>
-            <option value="VI">VI</option>
-            <option value="VII">VII</option>
-            <option value="VIII">VIII</option>
-            </select></td></tr>
-        <tr><td>Practical Course </td><td>:</td><td>Antennas and Microwave Engineering</td></tr>
-        <tr><td>Course Code</td><td>:</td><td>AECC41</td></tr>
-        <tr><td>Branch</td><td>:</td><td><select name="Branch" id="Branch">
-            <option value="AE">AE</option>
-            <option value="CSE">CSE</option>
-            <option value="CSE(AI&ML)">CSE(AI&ML)</option>
-            <option value="CSE(DS)">CSE(DS)</option>
-            <option value="CSE(CS)">CSE(CS)</option>
-            <option value="CSIT">CSIT</option>
-            <option value="IT">IT</option>
-            <option value="ECE">ECE</option>
-            <option value="EEE">EEE</option>
-            <option value="ME">ME</option>
-            <option value="CE">CE</option>
-            </select></td></tr>
+        <label for="Course">select course:</label>
+        <select name="Course" id="Course">
+            <option value="AHSC04 English Language and Communication Skills Laboratory">AHSC04</option>
+                <option value="AHSC05 Physics Laboratory">AHSC05</option>
+                <option value="ACSC02 Python Programming Laboratory">ACSC02</option>
+                <option value="AMEC02 Manufacturing Practice">AMEC02</option>
+                <option value="AMEC03 Computer Aided Engineering Drawing">AMEC03</option>
+                <option value="ACSC03 Programming for Problem Solving Laboratory">ACSC03</option>
+                <option value="AMEC08 Machine Drawing through CAD Laboratory">AMEC08</option>
+                <option value="AMEC09 Materials and Solid Mechanics Laboratory">AMEC09</option>
+                <option value="ACSC10 Data Structures Laboratory">ACSC10</option>
+                <option value="AMEC15 Manufacturing Processes Laboratory">AMEC15</option>
+                <option value="AMEC16 Fluid Mechanics and Hydraulic Machines Laboratory">AMEC16</option>
+                <option value="AMEC17 Applied Thermodynamics Laboratory">AMEC17</option>
+                <option value="AMEC25 Machine Tools and Metrology Laboratory">AMEC25</option>
+                <option value="AMEC26 Theory of Machines Laboratory">AMEC26</option>
+                <option value="ACSC23 Object Oriented Programming Development and Languages">ACSC23</option>
+                <option value="ACSC20 Experiential Engineering Education (ExEEd) – Project Based Learning">ACSC20</option>
+                <option value="ACSC27 Experiential Engineering Education (ExEEd) – Research Based Learning">ACSC27</option>
+                <option value="AMEC36 Heat Transfer Laboratory">AMEC36</option>
+                <option value="AMEC37 Thermo-Fluid Modeling and Simulation Laboratory">AMEC37</option>
+                <option value="AMEC48 CAD/CAM Laboratory">AMEC48</option>
+                <option value="AMEC49 Instrumentation, Control Systems & Production Drawing Practice Laboratory">AMEC49</option>
+                <option value="AMEC50 Project work (Phase – I)">AMEC50</option>
+                <option value="AMEC59 Project Work (Phase – II) / Full Semester Internship">AMEC59</option>          
+        </select>
+        <br><br>
+        <label for="Department">Department</label>
+        <select name="Department" id="Department">
+        <option value="AE">AE</option>
+        <option value="CSE">CSE</option>
+        <option value="CSE(AI&ML)">CSE(AI&ML)</option>
+        <option value="CSE(DS)">CSE(DS)</option>
+        <option value="CSE(CS)">CSE(CS)</option>
+        <option value="CSIT">CSIT</option>
+        <option value="IT">IT</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="ME">ME</option>
+        <option value="CE">CE</option>
+        </select>
+        <br><br>
+            </td></tr>
         <tr><td>Date(s) of Practical Exam</td><td>:</td><td><input type="date" id="date" name="date of exam"></td></tr>
 
     </div>
+    <br><br>
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Submit</button>
+
     <script src="script.js"></script>
 </body>
 </html>
