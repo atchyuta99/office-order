@@ -8,6 +8,12 @@
 </head>
 <body>
 
+    <script>
+        function myFunction(){
+            document.getElementById("Name").innerHTML="paragraph changed.";
+        }
+    </script>
+
     <div class="form-container">
         <h2>Details of the External Examiner</h2>
         <!-- Add form elements here -->
@@ -35,8 +41,8 @@
 
         <label for="Email">Email</label>
         <input type="input" id="Email" name="Email"><br><br>
-        <br><br>
-        <br><br>
+       
+       
 <h2>Details of the Lab</h2>
         <label for="Programme">Programme</label>
         <select name="Programme" id="Programme">
@@ -121,10 +127,6 @@
 
     </div>
     <br><br>
-    <button type="button"
-    onclick="document.getElementById('demo').innerHTML = Date()">
-    Submit</button>
-
-    <script src="script.js"></script>
+    <button type="button" onclick="myFunction()">Submit</button>
 </body>
 </html>
